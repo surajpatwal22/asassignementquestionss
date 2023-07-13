@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS Styles */
+        body {
+          font-family: Arial, sans-serif;
+        }
+    
+        .product-container {
+          display: flex;
+          justify-content: center;
+          padding: 2rem;
+        }
+    
+        .product-card {
+          width: 50%;
+          padding: 1rem;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          text-align: center;
+         margin-left: 20%;
+        }
+    
+        .product-card img {
+          max-width: 50%;
+          margin: auto;
+          height: auto;
+          margin-bottom: 1rem;
+        }
+    
+        .product-card h3 {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+    
+        .product-card p {
+          font-size: 1rem;
+        }
+        .btn2{
+    background-color: black;
+    color: #ffffff;
+    padding: 4px;
+    border-radius: 4px;
+    width: 4vw;
+    /* margin-left: 3vw; */
+
+}
+      </style>
+</head>
+
+<body>
+    <div class="productcontainer1" id="productcontainer1"></div>
+    <script>
+        const productContainer = document.getElementById("productcontainer1");
+
+        const selectedProduct = JSON.parse(localStorage.getItem("selectedProduct"));
+        if (selectedProduct) {
+            const productCard = createProductCard(selectedProduct);
+            productContainer.appendChild(productCard);
+        } else {
+            productContainer.innerHTML = "<h3>No product data available.</h3>";
+        }
+
+        // Create the product card element
+        function createProductCard(product) {
+            const card = document.createElement("div");
+            card.className = "product-card";
+
+            const image = document.createElement("img");
+            image.src = product.image;
+            image.alt = product.title;
+
+            const title = document.createElement("h3");
+            title.textContent = product.title;
+
+            const price = document.createElement("p");
+            price.textContent = `$${product.price}`;
+            
+            var cartButton = document.createElement("button");
+             cartButton.textContent = "buy"
+             cartButton.classList.add("btn2");
+
+            card.appendChild(image);
+            card.appendChild(title);
+            card.appendChild(price);
+            card.appendChild(cartButton);
+
+            return card;
+
+        }
+
+    </script>
+</body>
+
+</html>

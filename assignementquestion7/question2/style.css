@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0000cc;
+    width: 100vw;
+    height: 100vh;
+}
+.outer-container{
+    width: 100vw;
+    height:100vh;
+    background-color: #0000cc;
+}
+.hd1{
+    color:#fff;
+    text-align:center;
+    font-size: 160px;
+}
+.Displaybox{
+    background-color: #6666ff;
+    padding: 20px 20px;
+    width: 40vw;
+    height: 30vh;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 26vw;
+}
+.hd2{
+    color: #ffffff;
+
+}

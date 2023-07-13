@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.hd {
+    width: 30vw;
+    height: 6vh;
+    padding: 6px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    margin-left: 34%
+}
+.midContainer{
+    width: 30vw;
+    height: auto;
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 10vh;
+    text-align: center;
+}
+input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  button {
+    padding: 10px 20px;
+    width: 10vw;
+    background-color: blue;
+    color: #fff;
+    border: 1px solid blue;
+    cursor: pointer;
+  }
+.avatar{
+    margin-top: 6px;
+    width: 18vw;
+    height: 20vh;
+    border-radius: 20px;
+}
+h3{
+    color: #fff;
+    background-color: skyblue;
+    width: 20vw;
+    margin-left: 50px;
+    padding: 6px;
+}
+  #usercontainer{
+    width: auto;
+    height: 70vh;
+    background-color: blue;
+    
+  }
+  .usercontainer{
+    display: none;
+
+  }

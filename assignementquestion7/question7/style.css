@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Open Sans', sans-serif;
+    background-color: #808080;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.hd{
+    text-align: center;
+}
+#form{
+    text-align: center;
+}
+.formSxn{
+    background-color: #ffffff;
+    width: 20vw;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.formSxn input,
+.formSxn textarea{
+    width: 16vw;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+.btn{
+    width: 18vw;
+    color: #ffffff;
+    background-color: skyblue;
+    cursor: pointer;
+    padding: 4px    ;
+    border: none;
+}
+#livepreviewcontent{
+    width: 45%;
+    height: 40vh;
+    padding: auto;
+    display: flex;
+    border: solid 1px black;
+    background-color: #ffffff;
+}
+.Previewcontainer{
+    display: flex;
+}
