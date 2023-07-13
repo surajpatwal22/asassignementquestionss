@@ -1,7 +1,6 @@
 const Form = document.getElementById("form") ;
 const livePreviewContent = document.getElementById("livepreviewcontent");
 
-Form.addEventListener('input',updateLivePreview);
 
 const updateLivePreview = ()=> {
     const title = document.getElementById("title").value;
@@ -16,7 +15,10 @@ const updateLivePreview = ()=> {
       <div class="words">
           <h3> ${title} </h3>
           <p>${description}</p>
-          <button class="btn1">Written by${authorName}</button>
+          <button class="btn1">Written by ${authorName}</button>
       </div>
-  </div>`
-}
+  </div>`;
+};
+
+Form.addEventListener('input',updateLivePreview);
+
