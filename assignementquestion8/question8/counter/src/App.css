@@ -1,0 +1,41 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-color: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.count-container{
+  width: 30vw;
+  height: 40vh;
+  background-color: red;
+  border-radius: 10px;
+  text-align: center;
+
+}
+
+h1{
+  text-align: center;
+  font-size: 60px;
+  color: #ffffff ;
+  margin-top: 2rem;
+}
+
+.btn-i{
+  width: 6rem;
+  padding: 12px;
+  margin: 0px 20px;
+  
+}
+.btn-d{
+  width: 6rem;
+  padding: 12px;
+  margin: 0px 20px;
+}
