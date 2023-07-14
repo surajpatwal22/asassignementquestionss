@@ -43,12 +43,17 @@ const handleEvent =(event)=>{
         <div className='displaysxn'>
         {error && <p>{error}</p>}
       {user && (
-        <div>
-          <img src={user.avatar_url} alt={user.name} />
-          <h2>{user.name}</h2>
-          <p>Followers: {user.followers}</p>
-          <p>Bio: {user.bio}</p>
-          <p>Location: {user.location}</p>
+        <div className='usercontainer'>
+          <img src={user.avatar_url} alt={user.name} className='avatar' />
+          <div className='dissxn'>
+          <h3>{user.name}</h3>
+          <h3>Followers: {user.followers}</h3>
+          <h3>Bio: {user.bio}</h3>
+          <h3>Location: {user.location}</h3>
+          <h3>Public Repos:{user.public_repos}</h3>
+          <h3>Following : {user.following}</h3>
+          </div>
+          
         </div>
       )}
 

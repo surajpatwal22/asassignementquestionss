@@ -22,8 +22,11 @@ body{
   padding: 4px;
   width: 20rem;
   text-align: center;
-  margin-bottom: 30px;
+  
+  
   margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 form{
   background-color: #ffffff;
@@ -46,3 +49,33 @@ form{
   color: #ffffff;
   border: 1px solid blue;
 }
+.avatar{
+  margin-top: 6px;
+  width: 22vw;
+  height: 32vh;
+  border-radius: 20px;
+}
+h3{
+  color: #fff;
+  background-color: rgb(20, 106, 139);
+  width: 12vw;
+  margin-left: 50px;
+  padding: 6px;
+  border-radius: 10px;
+}
+.dissxn{
+  display: flex;
+  flex-wrap: wrap;
+}
+.usercontainer{
+  text-align: center;
+  width: 34vw;
+  height: 70vh;
+  background-color: blue;
+  margin: auto;
+  
+}
+/* .usercontainer{
+  display: none;
+
+} */
